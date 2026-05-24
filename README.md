@@ -1,6 +1,6 @@
 # DR Enhance
 
-Lightweight WordPress plugin for code snippets and style overrides for DR (Digitálna Revolúcia).
+Lightweight WordPress plugin for code snippets and style overrides for DR (Digitálny Radca).
 
 ## Features
 
