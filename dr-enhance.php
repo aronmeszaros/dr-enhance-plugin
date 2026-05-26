@@ -1,7 +1,7 @@
 <?php
 /**
  * Plugin Name: DR Enhance
- * Description: Code snippets and style overrides for DR (Digitálna Revolúcia).
+ * Description: Code snippets and style overrides for DR (Digitálny Radca).
  * Version: 1.0.0
  * Author: Aron Meszaros
  * License: GPL-2.0-or-later
