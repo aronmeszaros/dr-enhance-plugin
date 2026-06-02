@@ -5,16 +5,19 @@ if (!defined('ABSPATH')) {
 }
 
 require_once DRE_PLUGIN_PATH . 'includes/class-dre-assets.php';
+require_once DRE_PLUGIN_PATH . 'includes/class-dre-admin.php';
 
 class DRE_Plugin
 {
     private static ?DRE_Plugin $instance = null;
 
     private DRE_Assets $assets;
+    private DRE_Admin $admin;
 
     private function __construct()
     {
         $this->assets = new DRE_Assets();
+        $this->admin = new DRE_Admin();
     }
 
     public static function instance(): DRE_Plugin
