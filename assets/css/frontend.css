@@ -1,3 +1,45 @@
 .post-thumbnail.position-Hore  img { object-position: top;    }
 .post-thumbnail.position-Stred img { object-position: center; }
 .post-thumbnail.position-Dole  img { object-position: bottom; }
+
+.digi-posts-wrapper .slick-carousel .card h3.card-title {
+    margin: 0;
+}
+
+.digi-posts-wrapper .slick-carousel .card .card-title a {
+    color: inherit;
+    text-decoration: none !important;
+    font-weight: 600;
+    line-height: 1.5;
+    overflow: hidden;
+    display: -webkit-box;
+    line-clamp: 2;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    min-height: 3em;
+}
+
+.digi-posts-wrapper .slick-carousel .card .card-title a:hover {
+    text-decoration: underline !important;
+}
+
+.digi-posts-wrapper .slick-carousel .card .card-text {
+    overflow: hidden;
+    display: -webkit-box;
+    line-clamp: 3;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+}
+
+.two-lines{
+    line-height: 1.5;
+    overflow: hidden;
+    display: -webkit-box;
+    line-clamp: 2;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    min-height: 3em;
+}
