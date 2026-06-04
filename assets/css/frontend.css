@@ -1,11 +1,14 @@
+/* ACF-driven thumbnail focal point on single post hero images. */
 .post-thumbnail.position-Hore  img { object-position: top;    }
 .post-thumbnail.position-Stred img { object-position: center; }
 .post-thumbnail.position-Dole  img { object-position: bottom; }
 
+/* Normalize card title spacing in the Digi Posts carousel. */
 .digi-posts-wrapper .slick-carousel .card h3.card-title {
     margin: 0;
 }
 
+/* Clamp carousel title links to two lines. */
 .digi-posts-wrapper .slick-carousel .card .card-title a {
     color: inherit;
     text-decoration: none !important;
@@ -24,6 +27,7 @@
     text-decoration: underline !important;
 }
 
+/* Clamp carousel description text to three lines. */
 .digi-posts-wrapper .slick-carousel .card .card-text {
     overflow: hidden;
     display: -webkit-box;
@@ -33,6 +37,7 @@
     text-overflow: ellipsis;
 }
 
+/* utility class for two-line text clamp for other parts in the future */
 .two-lines{
     line-height: 1.5;
     overflow: hidden;

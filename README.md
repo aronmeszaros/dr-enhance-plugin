@@ -15,6 +15,12 @@ Lightweight WordPress plugin for code snippets and style overrides for DR (Digit
 
 This helps editors avoid awkward crops (for example, cut-off faces) without template changes.
 
+### Digi Posts Carousel Typography (Plugin-only)
+- Styles carousel card titles and descriptions from the plugin CSS only (no direct theme file edits)
+- Targets title links inside the carousel and limits them to 2 lines with ellipsis
+- Targets description paragraphs inside the carousel and limits them to 3 lines with ellipsis
+- Scope is limited to `.digi-posts-wrapper .slick-carousel` to avoid affecting other components
+
 ## ACF Setup
 
 Install and activate **Advanced Custom Fields (ACF)**, then create this field:
@@ -44,6 +50,10 @@ Location rule: show this field group for post type `post`.
 	 - `.post-thumbnail.position-Hore img { object-position: top; }`
 	 - `.post-thumbnail.position-Stred img { object-position: center; }`
 	 - `.post-thumbnail.position-Dole img { object-position: bottom; }`
+
+5. For the Digi Posts carousel, plugin CSS applies text clamping rules:
+	 - `.digi-posts-wrapper .slick-carousel .card .card-title a` -> 2 lines
+	 - `.digi-posts-wrapper .slick-carousel .card .card-text` -> 3 lines
 
 No theme template edits are required.
 
