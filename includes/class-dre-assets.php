@@ -20,6 +20,23 @@ class DRE_Assets
             [],
             DRE_VERSION
         );
+
+        wp_enqueue_script(
+            'dre-frontend',
+            DRE_PLUGIN_URL . 'assets/js/frontend.js',
+            [],
+            DRE_VERSION,
+            true
+        );
+
+        wp_localize_script(
+            'dre-frontend',
+            'dreShareLabels',
+            [
+                'copy' => __('Kopírovať odkaz', 'dr-enhance'),
+                'copied' => __('Skopírované', 'dr-enhance'),
+            ]
+        );
     }
 
     public function print_thumbnail_position_script(): void

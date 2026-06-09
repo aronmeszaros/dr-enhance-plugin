@@ -48,3 +48,212 @@
     text-overflow: ellipsis;
     min-height: 3em;
 }
+
+.dre-share-wrapper {
+    position: relative;
+    margin: 24px 0;
+}
+
+.dre-share-wrapper--top {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.dre-share-toggle {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    border: 1px solid #d4d8de;
+    background: #ffffff;
+    color: #1f252e;
+    padding: 9px 16px;
+    border-radius: 999px;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 1;
+    cursor: pointer;
+    transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.dre-share-toggle__icon {
+    font-size: 18px;
+    line-height: 1;
+}
+
+.dre-share-toggle:hover {
+    background-color: color-mix(in srgb, #f60, #000 30.2%) !important;
+    color: #ffffff;
+    border-color: #b8bec7;
+}
+
+.dre-share-panel {
+    position: absolute;
+    left: 0;
+    top: calc(100% + 14px);
+    width: min(640px, calc(100vw - 48px));
+    border: 1px solid #d8dde4;
+    background: #ffffff;
+    border-radius: 14px;
+    padding: 18px 18px 14px;
+    box-shadow: 0 12px 30px rgba(16, 24, 40, 0.14);
+    z-index: 30;
+}
+
+.dre-share-panel__header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 16px;
+    margin-bottom: 14px;
+}
+
+.dre-share-panel__title {
+    margin: 0;
+    font-size: 34px;
+    line-height: 1.06;
+    font-weight: 600;
+    color: #151d29;
+}
+
+.dre-share-close {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+    border-radius: 50%;
+    background: transparent;
+    color: #1f252e;
+    cursor: pointer;
+    text-decoration: none !important;
+    transition: background-color 0.2s ease;
+}
+
+.dre-share-close .material-icons {
+    font-size: 22px;
+}
+
+.dre-share-close:hover {
+    background: #f2f4f7;
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.dre-share-close:active,
+.dre-share-close:focus,
+.dre-share-close:focus-visible {
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.dre-share-actions {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 18px;
+}
+
+.dre-share-action {
+    width: 112px;
+    height: auto !important;
+    padding: 0;
+    border: none !important;
+    background: transparent;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    color: #111827;
+    text-decoration: none !important;
+    text-align: center;
+    font: inherit;
+    cursor: pointer;
+}
+
+.dre-share-action__icon {
+    width: 52px;
+    height: 52px;
+    border: none !important;
+    border-radius: 12px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: #ffffff;
+    transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+body:not(.elementor-page):not(.error404) main a:not(.btn):hover {
+    border-bottom: none !important;
+}
+
+
+.dre-share-action__icon .material-icons {
+    font-size: 24px;
+    color: #1f252e;
+}
+
+.dre-share-action__label {
+    font-size: 14px;
+    line-height: 1.15;
+    font-weight: 500;
+    color: #1f252e;
+    overflow-wrap: normal;
+    word-break: normal;
+    hyphens: none;
+    white-space: normal;
+}
+
+.dre-share-action:hover,
+.dre-share-action:focus-visible {
+    text-decoration: none !important;
+    border: none !important;
+}
+
+.dre-share-action:hover .dre-share-action__icon,
+.dre-share-action:focus-visible .dre-share-action__icon {
+    background-color: color-mix(in srgb, #f60, #000 30.2%) !important;
+    border-color: #b8bec7;
+}
+
+.dre-share-action:hover .dre-share-action__icon .material-icons,
+.dre-share-action:focus-visible .dre-share-action__icon .material-icons {
+    color: #ffffff;
+}
+
+.dre-share-wrapper--bottom .dre-share-panel {
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+@media (max-width: 767px) {
+    .dre-share-panel {
+        width: calc(100vw - 28px);
+        left: 50%;
+        transform: translateX(-50%);
+        padding: 16px 14px 12px;
+    }
+
+    .dre-share-panel__title {
+        font-size: 30px;
+    }
+
+    .dre-share-actions {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 12px 16px;
+    }
+
+    .dre-share-action {
+        width: 100%;
+    }
+
+    .dre-share-action__icon {
+        width: 46px;
+        height: 46px;
+    }
+}
